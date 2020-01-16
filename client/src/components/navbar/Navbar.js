@@ -10,19 +10,27 @@ const Navbar = () => {
   const { data, loading, error } = useQuery(MEQUERY)
 
   if(loading) return <p>Loading....</p>
-  if(error) return <Redirect to='/login' />
+  if(error) return <Redirect to='/' />
   if(!data) return <p>This is unfortunate</p>
 
   return (
     <div className='navigation'>
-      <header><NavLink exact to='/'>Forex</NavLink></header>
+      <header><NavLink exact to='/'>Skippy's Toy</NavLink></header>
       { !data.me ? (
         <ul>
           <li><NavLink exact to='/login'>Login</NavLink></li>
           <li><NavLink exact to='/register'>SignUp</NavLink></li>
+          <li><NavLink exact to='/about'>About</NavLink></li>
+          <li><NavLink exact to='/events'>Events</NavLink></li>
+          <li><NavLink exact to='/music'>Music</NavLink></li>
+          <li><NavLink exact to='/contact'>Contact</NavLink></li>
         </ul> ) 
       : (
         <ul>
+          <li><NavLink exact to='/about'>About</NavLink></li>
+          <li><NavLink exact to='/events'>Events</NavLink></li>
+          <li><NavLink exact to='/music'>Music</NavLink></li>
+          <li><NavLink exact to='/contact'>Contact</NavLink></li>
           <li><Logout /></li>
         </ul>
       )}

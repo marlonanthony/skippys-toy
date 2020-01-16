@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useMutation } from '@apollo/react-hooks'
 
-import { REGISTERMUTATION } from '../graphql/mutations/register'
+import { REGISTERMUTATION } from '../../graphql/mutations/register'
 
 export default function Register(props) {
   const [ email, setEmail ] = useState(''),

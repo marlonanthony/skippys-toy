@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useMutation } from '@apollo/react-hooks'
 
-import { MEQUERY } from '../graphql/queries/me'
-import { LOGINMUTATION } from '../graphql/mutations/login'
+import { MEQUERY } from '../../graphql/queries/me'
+import { LOGINMUTATION } from '../../graphql/mutations/login'
 
 export default function Login(props) {
   const [ email, setEmail ] = useState(''),

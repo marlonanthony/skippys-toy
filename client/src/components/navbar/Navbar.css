@@ -4,11 +4,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  background: var(--secondary-color);
   width: 100vw;
   height: 55px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .navigation header a {
@@ -38,5 +37,5 @@
 .navigation a:hover,
 .navigation a:active,
 .navigation a.active {
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
