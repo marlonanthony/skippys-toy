@@ -11,7 +11,7 @@ export default function Register(props) {
         [ register, { error } ] = useMutation(REGISTERMUTATION, {
           variables: { email, name, password, password2 }
         })
-
+        
   return (
     <div className='register'>
       <form onSubmit={ async e => {
