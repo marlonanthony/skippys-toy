@@ -9,7 +9,7 @@
   margin-top: -55px;
   animation-name: fade-pic; 
   animation-iteration-count: 1;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
 }
 
 @keyframes fade-pic {
@@ -19,6 +19,6 @@
 
 .home h1 {
   font-size: 3em; 
-  color: var(--secondary-color);
+  color: var(--header-text-color);
   letter-spacing: 15px;
 }

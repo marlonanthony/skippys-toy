@@ -2,10 +2,14 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section>
+    <section
+      style={{
+        padding: '50px 10%'
+      }}
+    >
       <h1>About</h1>
       <img src={require('../../images/gdup.jpg')} alt="hi" style={{
-        padding: 20
+        padding: 20,
       }} />
       <p style={{ padding: 20 }}>We play everything from Pretenders, Janice, Jefferson Airplane and Fleetwood Mac to The Beatles, Crosby Stills and Nash, The Stones, Bob Seger and Badfinger to name a few.  We even have some Sonny & Cher and some Monkees! You name the decade and genre, and we most likely have it. Jimmy Mannix - guitar & vocals
         Jimmy Mannix is a founding member of Big Bang, a local band that survived over 20 years. He was also in Cheap Sunglasses, Outloud, and various other bands. Jimmy's incredible guitar playing and stunning vocals make him one of the best and most respected performers around the area.

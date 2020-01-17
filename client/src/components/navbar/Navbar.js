@@ -37,7 +37,7 @@ const Navbar = props => {
           <li><NavLink exact to='/events'>Events</NavLink></li>
           <li><NavLink exact to='/music'>Music</NavLink></li>
           <li><NavLink exact to='/contact'>Contact</NavLink></li>
-          <li><Logout /></li>
+          <li><NavLink exact to='/navlinkstylesbruh'><Logout /></NavLink></li>
         </ul>
       )}
     </section>
