@@ -9,7 +9,7 @@
   margin-top: -55px;
   animation-name: fade-pic; 
   animation-iteration-count: 1;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 @keyframes fade-pic {

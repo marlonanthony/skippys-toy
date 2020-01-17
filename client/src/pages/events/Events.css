@@ -1,0 +1,10 @@
+#calendar {
+  margin: 0 auto;
+  min-width: 300px;
+  
+}
+
+#calendar_iframe {
+  width: 100%;
+  height: 600px;
+}

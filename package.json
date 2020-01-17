@@ -4,11 +4,14 @@
   "description": "Skippy's Toy",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "Marlon Decosta",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^5.0.2",
     "nodemon": "^2.0.2"
   },
   "dependencies": {

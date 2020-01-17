@@ -1,0 +1,35 @@
+.about-section-padding {
+  padding: 50px 10%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-pics {
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+}
+
+.avatar_bio_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  border: 5px solid black;
+  
+}
+
+.avatar_bio_container p {
+  max-width: 300px;
+  padding: 10px;
+}
