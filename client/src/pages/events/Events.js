@@ -3,7 +3,7 @@ import React from 'react'
 export default function Events() {
   return (
     <section>
-      Events Page
+      <h1>Events</h1>
     </section>
   )
 }
