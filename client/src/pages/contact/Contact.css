@@ -1,0 +1,11 @@
+.contact_info {
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.contact_info_p {
+  padding-left: 5px;
+  font-style: italic;
+  font-weight: normal;
+}
