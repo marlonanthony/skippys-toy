@@ -40,3 +40,51 @@
 .navigation a.active {
   color: var(--secondary-color);
 }
+
+
+
+/* Homepage navbar */
+.homepage_nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 2;
+}
+.homepage_nav:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+.homepage_nav header a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  margin-left: 10px;
+}
+.homepage_nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 15px;
+}
+
+.homepage_nav li {
+  margin: 0 15px;
+  color: var(--header-text-color);
+}
+.homepage_nav li:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.homepage_nav a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+.homepage_nav a:hover,
+.homepage_nav a:active,
+.homepage_nav a.active {
+  color: var(--secondary-color);
+}

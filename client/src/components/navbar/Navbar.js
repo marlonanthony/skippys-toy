@@ -12,11 +12,9 @@ const Navbar = props => {
   if(loading) return <p>Loading....</p>
 
   return (
-    <section className='navigation'
-      style = { props.location.pathname === '/' ? { 
-        backgroundColor: 'rgba(0,0,0,0.1)',
-          zIndex: 2 
-      } : null }
+    <section className={props.location.pathname !== '/' 
+      ? 'navigation'
+      : 'homepage_nav'}
     >
       <header>
         <NavLink exact to='/'>
