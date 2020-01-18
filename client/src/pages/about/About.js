@@ -4,13 +4,13 @@ import './About.css'
 export default function About() {
   return (
     <section className='about-section'>
-      <h1>About Us</h1>
+      <h1>Who We Are</h1>
       <div className='about'>
         <img src={require('../../images/gdup.jpg')} alt="hi" className='about-pic'/>
         <p>We're a 5 piece band, female and male vocalists. Covering a variety of tunes from the 60's and up. Top 20 semi-finalist for WMGK 102.9 house band competition 2018</p>
         <h2>What We Play</h2>
         <p>We play everything from Pretenders, Janice, Jefferson Airplane and Fleetwood Mac to The Beatles, Crosby Stills and Nash, The Stones, Bob Seger and Badfinger to name a few.  We even have some Sonny & Cher and some Monkees! You name the decade and genre, and we most likely have it.</p>
-        <h2>Who We Are</h2>
+        <h2>The Band</h2>
         <div className='avatar_bio_container'>
           <img className='avatar' src='https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/28575984_10214481840133797_6430062679029051248_n.jpg?_nc_cat=105&_nc_ohc=MT31BNUvBSYAX-mDq1h&_nc_ht=scontent-lga3-1.xx&oh=e353c132fe8f74e4ede75a90e0992f04&oe=5E91B731' alt=""/>
           <p>Jimmy Mannix - guitar & vocals 
