@@ -11,8 +11,6 @@ const PORT = 4000,
   { db, secret } = require('./config/keys'),
   app = express()
 
-require('./utils/connectToDB')(db)
-
 app.use(cors())
 
 app.use(session({
@@ -44,6 +42,8 @@ apollo.applyMiddleware({
     origin: 'http://localhost:3000'
   }
 })
+
+require('./utils/connectToDB')(db)
 
 app.listen({ port: process.env.PORT || 4000 }, 
   () => console.log(`Server running on localhost:${PORT}${apollo.graphqlPath}`)
