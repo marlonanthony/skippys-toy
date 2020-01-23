@@ -49,9 +49,7 @@ apollo.applyMiddleware({
 })
 
 mongoose.connect(db, {
-  useNewUrlParser: true, 
-  useCreateIndex: true,
-  useUnifiedTopology: true
+  useNewUrlParser: true,
 })
 .then(() => app.listen({ port: process.env.PORT || 4000 }, 
   () => console.log(`Server running on localhost:${PORT}${apollo.graphqlPath}`)
