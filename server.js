@@ -21,11 +21,13 @@ app.use(session({
   saveUninitialized: false
 }))
 
-app.use('/static', express.static(path.join(__dirname, '/static/static')))
+if(process.env.NODE_ENV === 'production') {
+  app.use('/static', express.static(path.join(__dirname, '/static/static')))
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/static/index.html'))
-})
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/static/index.html'))
+  })
+}
 
 const apollo = new ApolloServer({
   typeDefs,
@@ -38,7 +40,9 @@ apollo.applyMiddleware({
   app,
   cors: {
     credentials: true,
-    origin: 'http://localhost:3000'
+    origin: process.env.NODE_ENV === 'production'
+      ? 'https://skippys-toy.herokuapp.com'
+      : 'http://localhost:3000'
   }
 })
 
