@@ -4,12 +4,14 @@ const express = require('express'),
   path = require('path'),
   cors = require('cors')
 
-const PORT = 4000,
+const PORT = process.env.PORT || 4000,
   typeDefs = require('./typedefs/typeDefs'),
   resolvers = require('./resolvers/resolvers'),
   UserAPI = require('./datasources/user'),
   { db, secret } = require('./config/keys'),
   app = express()
+
+require('./utils/connectToDB')(db)
 
 app.use(cors())
 
@@ -43,8 +45,6 @@ apollo.applyMiddleware({
   }
 })
 
-require('./utils/connectToDB')(db)
-
-app.listen({ port: process.env.PORT || 4000 }, 
+app.listen(PORT, 
   () => console.log(`Server running on localhost:${PORT}${apollo.graphqlPath}`)
 )
