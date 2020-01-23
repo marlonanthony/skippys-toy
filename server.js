@@ -2,7 +2,8 @@ const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
   session = require('express-session'),
   path = require('path'),
-  cors = require('cors')
+  cors = require('cors'),
+  mongoose = require('mongoose')
 
 const PORT = 4000,
   typeDefs = require('./typedefs/typeDefs'),
@@ -11,7 +12,7 @@ const PORT = 4000,
   { db, secret } = require('./config/keys'),
   app = express()
 
-require('./utils/connectToDB')(db)
+// require('./utils/connectToDB')(db)
 
 app.use(cors())
 
@@ -33,7 +34,9 @@ const apollo = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({ userAPI: new UserAPI() }),
-  context: ({ req }) => ({ req })
+  context: ({ req }) => ({ req }),
+  introspection: true,
+  playground: { endpoint: '/graphql' }
 })
 
 apollo.applyMiddleware({ 
@@ -45,6 +48,11 @@ apollo.applyMiddleware({
   }
 })
 
-app.listen(process.env.PORT || PORT, 
+mongoose.connect(db, {
+  useNewUrlParser: true, 
+  useCreateIndex: true,
+  useUnifiedTopology: true
+})
+.then(() => app.listen({ port: process.env.PORT || 4000 }, 
   () => console.log(`Server running on localhost:${PORT}${apollo.graphqlPath}`)
-)
+)).catch(error => console.log(error))
