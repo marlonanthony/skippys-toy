@@ -1,6 +1,7 @@
 const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
-  session = require('express-session')
+  session = require('express-session'),
+  path = require('path')
 
 const PORT = 4000,
   typeDefs = require('./typedefs/typeDefs'),
