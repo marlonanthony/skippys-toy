@@ -9,7 +9,7 @@ import './Navbar.css'
 const Navbar = props => {
   const { data, loading } = useQuery(MEQUERY),
         [toggleNav, setToggleNav] = useState(false)
-        
+
   if(loading) return <p>Loading....</p>
 
   return (
@@ -92,10 +92,7 @@ const Navbar = props => {
           </li>
         </ul>
       )}
-      <div className='burger' onClick={() => {
-        setToggleNav(() => !toggleNav)
-        console.log(toggleNav)  
-      }}
+      <div className='burger' onClick={() => setToggleNav(prev => !prev)}
       >
         <div id='line1'></div>
         <div id='line2'></div>
