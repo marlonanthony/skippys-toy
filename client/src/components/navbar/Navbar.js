@@ -18,7 +18,11 @@ const Navbar = props => {
     >
       <header>
         <NavLink exact to='/'>
-          <img src={require('../../images/skippys_logo.jpg')} alt="logo" height='40' width='40' />
+          <img 
+            src={require('../../images/skippys_logo.jpg')} 
+            alt="logo" 
+            id='logo'
+          />
         </NavLink></header>
       { !data || !data.me ? (
         <ul>

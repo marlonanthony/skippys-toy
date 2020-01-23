@@ -1,5 +1,11 @@
 .navbar { margin-bottom: 55px; }
 
+#logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
 .navigation {
   position: fixed;
   left: 0;
@@ -9,7 +15,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgba(0,0,0,1);
+  background: rgb(36, 41, 46);
 }
 .navigation header a {
   text-decoration: none;
