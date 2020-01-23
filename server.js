@@ -1,4 +1,4 @@
-const app = require('express')(),
+const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
   session = require('express-session')
 
@@ -6,7 +6,8 @@ const PORT = 4000,
   typeDefs = require('./typedefs/typeDefs'),
   resolvers = require('./resolvers/resolvers'),
   UserAPI = require('./datasources/user'),
-  { db, secret } = require('./config/keys')
+  { db, secret } = require('./config/keys'),
+  app = express()
 
 require('./utils/connectToDB')(db)
 
@@ -15,6 +16,12 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }))
+
+app.use('/static', express.static(path.join(__dirname, '/static/static')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/static/index.html'))
+})
 
 const apollo = new ApolloServer({
   typeDefs,
@@ -31,6 +38,6 @@ apollo.applyMiddleware({
   }
 })
 
-app.listen(PORT, 
+app.listen(process.env.PORT || PORT, 
   () => console.log(`Server running on localhost:${PORT}${apollo.graphqlPath}`)
 )
