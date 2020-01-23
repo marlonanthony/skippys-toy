@@ -37,12 +37,11 @@ const apollo = new ApolloServer({
 })
 
 apollo.applyMiddleware({ 
+  path: '*',
   app,
   cors: {
     credentials: true,
-    origin: process.env.NODE_ENV === 'production'
-      ? 'https://skippys-toy.herokuapp.com'
-      : 'http://localhost:3000'
+    origin: 'http://localhost:3000'
   }
 })
 
