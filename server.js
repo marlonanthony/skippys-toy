@@ -1,7 +1,8 @@
 const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
   session = require('express-session'),
-  path = require('path')
+  path = require('path'),
+  cors = require('cors')
 
 const PORT = 4000,
   typeDefs = require('./typedefs/typeDefs'),
@@ -11,6 +12,8 @@ const PORT = 4000,
   app = express()
 
 require('./utils/connectToDB')(db)
+
+app.use(cors())
 
 app.use(session({
   secret,
