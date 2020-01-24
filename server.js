@@ -21,13 +21,13 @@ app.use(session({
   saveUninitialized: false
 }))
 
-if(process.env.NODE_ENV === 'production') {
+// if(process.env.NODE_ENV === 'production') {
   app.use('/static', express.static(path.join(__dirname, '/static/static')))
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/static/index.html'))
   })
-}
+// }
 
 const apollo = new ApolloServer({
   typeDefs,
