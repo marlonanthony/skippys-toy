@@ -45,7 +45,7 @@ const Navbar = props => {
           >
             <NavLink exact to='/contact'>Contact</NavLink>
           </li>
-          <li style={toggleNav ? {
+          {/* <li style={toggleNav ? {
             animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
             onClick={() => setToggleNav(false)}
           >
@@ -56,7 +56,7 @@ const Navbar = props => {
               onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/register'>SignUp</NavLink>
-          </li>
+          </li> */}
         </ul> ) 
       : (
         <ul id={toggleNav ? 'nav-active' : ''}>
@@ -84,12 +84,12 @@ const Navbar = props => {
           >
             <NavLink exact to='/contact'>Contact</NavLink>
           </li>
-          <li style={toggleNav ? {
+          {/* <li style={toggleNav ? {
             animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/navlinkstylesbruh'><Logout /></NavLink>
-          </li>
+          </li> */}
         </ul>
       )}
       <div className='burger' onClick={() => setToggleNav(prev => !prev)}
