@@ -47,8 +47,23 @@ export default function About() {
           </p>
         </div>
         <h2>Pure Petty</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel fugit sint voluptatibus eaque est consectetur explicabo deleniti ex commodi sed? Vel consectetur tempore ipsam expedita qui porro autem magni cum?</p>
+        <p>Pure Petty is a tribute band dedicated to the late great Tom Petty. Pure Petty includes all members of Skippy’s Toy with an additional two all star musicians.</p>
         <iframe id='pure-petty-intro' src="https://www.youtube.com/embed/C3TXaQish40" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title='pure-petty-intro' allowFullScreen></iframe>
+        <h2>Additional Members</h2>
+        <div className='avatar_bio_container'>
+          <img className='avatar' src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/p640x640/64854322_973691506296182_2941609747977076736_o.jpg?_nc_cat=104&_nc_ohc=aTN5Y0xzbk0AX_gtAP5&_nc_ht=scontent-lga3-1.xx&_nc_tp=6&oh=e9f83f914da3055ddfb4a0b665a50a95&oe=5E8EA0DD" alt="avatar"/>
+          <p><span className='bio-title'>Pete "Eggman" Smith: lead guitar</span>
+          <br /><br />
+          Pete "Eggman" Smith started his musical career as a founding member of PEGASUS. He also played locally with PROWLER. Pete then went on tour with CHUBBY CHECKER and with ROBERT HAZARD & THE HEROS. He is currently working on an original project called SUCCESSFUL FAILURES.
+          </p>
+        </div>
+        <div className='avatar_bio_container'>
+          <img className='avatar' src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/p640x640/66511546_973690889629577_3122487884716703744_o.jpg?_nc_cat=106&_nc_ohc=kjLWJ23HSswAX8HE_RW&_nc_ht=scontent-lga3-1.xx&_nc_tp=6&oh=4d428aa323f58d9b660219fd712d3eae&oe=5E966E9C" alt="avatar"/>
+          <p><span className='bio-title'>Mike "Doc" Meltzer: Keyboard, vocals</span>
+          <br /><br />
+          Mike “Doc” Meltzer a real life doctor who practices family medicine as a “side gig.” Doc has been playing keyboards and singing for over 40 years. Mike is an original member of Midlife Crisis and also played with the band Doghouse. Doc does not shy away from a good joke and is known to share his twisted humor on stage. This pint sized powerhouse brings joy and energy to every gig.
+          </p>
+        </div>
       </div>
     </section>
   )
