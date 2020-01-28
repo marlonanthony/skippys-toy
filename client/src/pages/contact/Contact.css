@@ -46,8 +46,8 @@
 }
 .form_control {
   padding: 8px;
-  width: 100%;
-  max-width: 700px;
+  width: 80%;
+  max-width: 600px;
   margin: 5px;
   font-size: 1.3rem;
   border: none;
