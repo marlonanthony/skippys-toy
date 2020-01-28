@@ -1,11 +1,71 @@
+.info_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
 .contact_info {
   display: flex;
   padding: 10px;
   font-weight: bold;
+}
+.contact_info label {
+  display: none;
+}
+
+.contact_info_div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px;
 }
 
 .contact_info_p {
   padding-left: 5px;
   font-style: italic;
   font-weight: normal;
+}
+
+.icons {
+  font-size: 30px;
+  padding: 5px;
+}
+
+#youtube { color: red; }
+#facebook { color: var(--secondary-color); }
+#phone { color: var(--secondary-color); }
+#email { color: var(--secondary-color); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_control {
+  padding: 8px;
+  width: 60%;
+  margin: 5px;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--secondary-color);
+  background: var(--primary-color);
+}
+.submit_btn {
+  margin-top: 30px;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  border: none;
+  background: var(--secondary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+.submit_btn:hover {
+  opacity: 0.7;
 }
