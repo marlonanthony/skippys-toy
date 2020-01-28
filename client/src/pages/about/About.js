@@ -46,6 +46,9 @@ export default function About() {
             Kevin "Ace" Porter founded Skippy's Toy.  Ace started off in a band called Sinner where he played bass for 5 years.  After Sinner, Ace got involved in sound engineering, and spent decades providing sound for popular touring bands. Ace has a great ear, and is well known for his talent in the music industry. Ace was also involved in the fine art of Italian Rum Cake, cannolis and other fine pastries!
           </p>
         </div>
+        <h2>Pure Petty</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel fugit sint voluptatibus eaque est consectetur explicabo deleniti ex commodi sed? Vel consectetur tempore ipsam expedita qui porro autem magni cum?</p>
+        <iframe id='pure-petty-intro' src="https://www.youtube.com/embed/C3TXaQish40" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title='pure-petty-intro' allowFullScreen></iframe>
       </div>
     </section>
   )

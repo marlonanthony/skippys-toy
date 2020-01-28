@@ -32,7 +32,7 @@
   justify-content: space-between;
   margin: 10px 0;
   border-radius: 10px;
-  border: 0.5px solid var(--border-color);
+  /* border: 0.5px solid var(--border-color); */
   overflow: hidden;
 }
 .avatar_bio_container p {
@@ -41,6 +41,12 @@
 }
 .avatar_bio_container .bio-title {
   color: var(--secondary-color);
+}
+
+#pure-petty-intro {
+  width: 100%; 
+  height: 315px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 700px){
