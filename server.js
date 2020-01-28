@@ -1,6 +1,7 @@
 const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
   session = require('express-session'),
+  MongoStore = require('connect-mongo')(session),
   path = require('path'),
   cors = require('cors')
 
@@ -18,7 +19,10 @@ app.use(cors())
 app.use(session({
   secret,
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  store: new MongoStore({
+    mongooseConnection: mongoose.connection
+  })
 }))
 
 // if(process.env.NODE_ENV === 'production') {
