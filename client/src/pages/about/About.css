@@ -32,7 +32,6 @@
   justify-content: space-between;
   margin: 10px 0;
   border-radius: 10px;
-  /* border: 0.5px solid var(--border-color); */
   overflow: hidden;
 }
 .avatar_bio_container p {
