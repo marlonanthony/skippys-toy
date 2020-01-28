@@ -1,5 +1,6 @@
 const express = require('express'),
   { ApolloServer } = require('apollo-server-express'),
+  mongoose = require('mongoose'),
   session = require('express-session'),
   MongoStore = require('connect-mongo')(session),
   path = require('path'),
