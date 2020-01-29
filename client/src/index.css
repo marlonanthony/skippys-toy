@@ -3,7 +3,7 @@
   --secondary-color: rgb(55,131,255);
   --text-color: rgb(225,225,225);
   --header-text-color: rgb(255,255,255);
-  --border-color: rgba(200,200,200,0.5);
+  --h1-color: #555;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,11 +19,14 @@ body {
 h1 {
   text-align: center;
   font-size: 40px;
-  color: #555;
+  color: var(--h1-color);
+  padding: 10px;
 }
 h2 {
-  color: #555;
+  color: var(--h1-color);
 }
+
+.no_margin { margin: 0px; }
 
 .login input,
 .register input {

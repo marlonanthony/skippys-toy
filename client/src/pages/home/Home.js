@@ -3,12 +3,8 @@ import './Home.css'
 
 export default function Home() {
   return (
-    <section className='home' style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-      <div style={{ padding: 10, marginTop: 100 }}>
+    <section className='home'>
+      <div id='home_h1_div'>
         <h1>Skippy's Toy</h1>
       </div>
     </section>

@@ -52,8 +52,7 @@ export default function Register(props) {
         { error && <p>{ error.message }</p> }
         <button
           type='submit'
-          className='submit_btn'
-          style={{ margin: 0 }}
+          className='submit_btn no_margin'
         >
           Sign Up
         </button>
