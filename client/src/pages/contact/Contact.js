@@ -21,15 +21,19 @@ export default function Contact() {
       <div className='form_container'>
         <form 
           className='form'
-          onSubmit={e => e.preventDefault()}>
+          action={`https://getsimpleform.com/messages?form_api_token=6a1921982fce1cfeb01a73367e2d497c`}
+          method="POST"
+        >
           <input 
             type="text"
+            name='name'
             className='form_control'
             placeholder='Name'
             required
           />
           <input 
             type="email"
+            name='email'
             className='form_control'
             placeholder='Email'
             required
@@ -45,7 +49,7 @@ export default function Contact() {
           <button
             type='submit'
             className='submit_btn'
-            onClick={() => console.log('Hello World!')}
+            onClick={() => alert('We\'ll be in touch!')}
           >Say Hi!</button>
         </form>
       </div>
