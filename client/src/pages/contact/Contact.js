@@ -41,7 +41,6 @@ export default function Contact() {
           <textarea 
             name="message" 
             className='form_control'
-            id="" 
             cols="50" 
             rows="1"
             placeholder='Message'
@@ -54,20 +53,20 @@ export default function Contact() {
               if(c) alert('We\'ll be in touch!')
               else e.preventDefault()
             }}
-          >Say Hi!</button>
+          >
+            Say Hi!
+          </button>
         </form>
       </div>
       <div className='info_container'>
         <div className='contact_info_div'>
-          <label htmlFor="youtube"></label>
-          YouTube
+          <label htmlFor="youtube">YouTube</label>
           <a href='https://www.youtube.com/user/MrKporter136/videos' target='_blank' rel='noopener noreferrer'>
             <i className="fab fa-youtube icons" id='youtube'></i>
           </a>
         </div>
         <div className='contact_info_div'>
-          <label htmlFor="facebook"></label>
-          facebook
+          <label htmlFor="facebook">facebook</label>
           <a href='https://www.facebook.com/SkippysRock/' target='_blank' rel='noopener noreferrer'>
             <i className="fab fa-facebook-f icons" id='facebook'></i>
           </a>
