@@ -50,7 +50,13 @@ export default function Register(props) {
           placeholder='Enter your password again'
         />
         { error && <p>{ error.message }</p> }
-        <button>SignUp</button>
+        <button
+          type='submit'
+          className='submit_btn'
+          style={{ margin: 0 }}
+        >
+          Sign Up
+        </button>
       </form>
     </div>
   )

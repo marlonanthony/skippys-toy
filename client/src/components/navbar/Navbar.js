@@ -21,71 +21,57 @@ const Navbar = props => {
       <NavLink exact to='/'><h4 id='logo'>Skippy's Toy</h4></NavLink>
       { !data || !data.me ? (
         <ul id={toggleNav ? 'nav-active' : ''}>
-          <li style={toggleNav ? { 
-            animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/about'>About</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/events'>Events</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .4s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .4s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/music'>Music</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .6s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .6s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/contact'>Contact</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
             onClick={() => setToggleNav(false)}
           >
-            <NavLink exact to='/login'>Login</NavLink>
-          </li>
-          <li style={ toggleNav ? {
-              animation: `navLinkFade 0.5s ease forwards 1s`}: {}}
-              onClick={() => setToggleNav(false)}
-          >
-            <NavLink exact to='/register'>SignUp</NavLink>
+            <NavLink exact to='/login'>
+              <i className="fas fa-key" />
+            </NavLink>
           </li>
         </ul> ) 
       : (
         <ul id={toggleNav ? 'nav-active' : ''}>
-          <li style={toggleNav ? { 
-            animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/about'>About</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .2s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/events'>Events</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .4s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .4s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/music'>Music</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .6s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .6s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/contact'>Contact</NavLink>
           </li>
-          <li style={toggleNav ? {
-            animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
+          <li style={toggleNav ? { animation: `navLinkFade 0.5s ease forwards .8s`}: {}}
             onClick={() => setToggleNav(false)}
           >
             <NavLink exact to='/navlinkstylesbruh'><Logout /></NavLink>

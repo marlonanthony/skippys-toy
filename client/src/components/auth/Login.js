@@ -26,7 +26,7 @@ export default function Login(props) {
         await login()
         props.history.push('/') 
       }}>
-        <h2>Login</h2>
+        <h2>Sign In</h2>
         <input
           required
           name='email'
@@ -43,7 +43,13 @@ export default function Login(props) {
           placeholder='Enter your password'
         />
         { error && <p>{ error.message }</p> }
-        <button type='submit'>Login</button>
+        <button
+          type='submit'
+          className='submit_btn'
+          style={{ margin: 0 }}
+        >
+          Sign In
+        </button>
       </form>
     </div>
   )
