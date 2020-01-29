@@ -49,7 +49,11 @@ export default function Contact() {
           <button
             type='submit'
             className='submit_btn'
-            onClick={() => alert('We\'ll be in touch!')}
+            onClick={e => {
+              const c = window.confirm('Send Email?')
+              if(c) alert('We\'ll be in touch!')
+              else e.preventDefault()
+            }}
           >Say Hi!</button>
         </form>
       </div>
